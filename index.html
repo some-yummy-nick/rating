@@ -5,117 +5,37 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
-    <link rel="preload" href="fonts/Geometria/Geometria.woff2" as="font" type="font/woff2" crossorigin>
-
-    <style>
-        @font-face {
-            font-family: "Geometria";
-            src: url('fonts/Geometria/Geometria.woff') format('woff'),
-            url('fonts/Geometria/Geometria.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        body.body {
-            font-family: "Geometria", Roboto, Arial, sans-serif;
-        }
-    </style>
+    <title>Rating</title>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/modernizr-custom.js"></script>
-    <script defer src="js/lazyload.min.js"></script>
-    <script defer src="js/imask.min.js"></script>
-    <script defer src="js/lib.js"></script>
-    <script defer src="js/smoothscroll.min.js"></script>
-    <script defer src="js/modaal.min.js"></script>
     <script defer src="js/script.js"></script>
 </head>
 
 <body class="body">
 
-<!--start wrapper-->
-<div class="wrapper">
-
-    <!--start content-->
-    <div class="content">
-
-        <!--start header-->
-        <header class="header">
-            <div class="container">
-                <div class="header__blocks">
-                    <div class="header__block">
-                        <div class="logo">
-                            <a class="logo__link" href="#" title="Перейти на главную страницу">
-                                <img class="logo__pic" src="http://via.placeholder.com/150x80"
-                                     alt="Перейти на главную страницу">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="header__block header__block_wide">
-                        <button class="hamburger" id="js-hamburger" aria-expanded="false">
-                            <span class="hamburger__screen-reader-text">Меню</span>
-
-                        </button>
-                        <div class="menu" id="js-menu" aria-expanded="false">
-                            <nav>
-                                <ul class="menu__list">
-                                    <li class="menu__item">
-                                        <a class="menu__link" href="#">Продукты</a>
-                                    </li>
-                                    <li class="menu__item">
-                                        <a class="menu__link" href="#">Корзина</a>
-                                    </li>
-                                    <li class="menu__item">
-                                        <a class="menu__link" href="#">Доставка</a>
-                                    </li>
-                                    <li class="menu__item">
-                                        <a class="menu__link" href="#">Руководство</a>
-                                    </li>
-                                    <li class="menu__item">
-                                        <a class="menu__link" href="#">Контакты</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="header__block header__block_mobile">
-                        <div class="social">
-                            <ul class="social__list">
-                                <li class="social__item">
-                                    <a class="social__link social__link_vk" href="#">В контакте</a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link social__link_fb" href="#">Facebook</a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link social__link_youtube" href="#">Youtube</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!--end header-->
-
-        <main>
-            <a href="ajax/modal.php" class="modaal-ajax">Show</a>
-        </main>
+<div class="center">
+    <div class="rating">
+        <div class="rating__wrapper">
+            <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                    class="rating__icon rating__icon--star"></i></label>
+            <input class="rating__input" name="rating" id="rating-1" value="1" type="radio">
+            <label aria-label="2 stars" class="rating__label" for="rating-2"><i
+                    class="rating__icon rating__icon--star"></i></label>
+            <input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
+            <label aria-label="3 stars" class="rating__label" for="rating-3"><i
+                    class="rating__icon rating__icon--star"></i></label>
+            <input class="rating__input" name="rating" id="rating-3" value="3" type="radio">
+            <label aria-label="4 stars" class="rating__label" for="rating-4"><i
+                    class="rating__icon rating__icon--star"></i></label>
+            <input class="rating__input" name="rating" id="rating-4" value="4" type="radio" checked>
+            <label aria-label="5 stars" class="rating__label" for="rating-5"><i
+                    class="rating__icon rating__icon--star"></i></label>
+            <input class="rating__input" name="rating" id="rating-5" value="5" type="radio" >
+            <input type="hidden" class="js-star-value" value="4">
+        </div>
 
     </div>
 
-    <!--start footer-->
-    <footer class="footer" role="contentinfo">
-        <div class="container">footer</div>
-    </footer>
-    <!--end footer-->
-
 </div>
-<!--end wrapper-->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 </body>
-
 </html>
